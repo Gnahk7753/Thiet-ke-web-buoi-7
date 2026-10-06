@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Form Validation Exercise</title>
+        <link rel="stylesheet" type="text/css" href="Styles/Cau9.css">
+    </head>
+
+    <body>
+        <form id="registerForm">
+            <h3>Personal Information</h3>
+            <table>
+                <tr>
+                    <td class="label">Enter name*:</td>
+                    <td><input type="text" id="name"></td>
+                    <td class="error" id="errName"></td>
+                </tr>
+                <tr>
+                    <td class="label">Sex*:</td>
+                    <td>
+                        <label><input type="radio" name="sex" value="Male"> Male</label>
+                        <label><input type="radio" name="sex" value="Female"> Female</label>
+                    </td>
+                    <td class="error" id="errSex"></td>
+                </tr>
+                <tr>
+                    <td class="label">Enter email address*:</td>
+                    <td><input type="text" id="email"></td>
+                    <td class="error" id="errEmail"></td>
+                </tr>
+                <tr>
+                    <td class="label">Enter birthday (MM/DD/YYYY)*:</td>
+                    <td><input type="text" id="birthday"></td>
+                    <td class="error" id="errBirthday"></td>
+                </tr>
+                <tr>
+                    <td class="label">Enter street address (line 1)*:</td>
+                    <td><input type="text" id="street"></td>
+                    <td class="error" id="errStreet"></td>
+                </tr>
+                <tr>
+                    <td class="label">Enter city*:</td>
+                    <td><input type="text" id="city"></td>
+                    <td class="error" id="errCity"></td>
+                </tr>
+                <tr>
+                    <td class="label">Select a region*:</td>
+                    <td>
+                        <select id="region">
+                            <option value=""></option>
+                            <option value="North">North</option>
+                            <option value="Central">Central</option>
+                            <option value="South">South</option>
+                        </select>
+                    </td>
+                    <td class="error" id="errRegion"></td>
+                </tr>
+                <tr>
+                    <td class="label">Enter 5-digit ZIP code*:</td>
+                    <td><input type="text" id="zip" maxlength="5"></td>
+                    <td class="error" id="errZip"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Finish" onclick="finish()">
+                        <input type="button" value="Clear" onclick="clearForm()">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="Scripts/Cau9.js"></script>
+    </body>
+</html>

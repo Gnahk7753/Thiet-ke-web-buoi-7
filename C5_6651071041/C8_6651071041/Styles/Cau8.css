@@ -1,0 +1,4 @@
+body { margin: 30px; font-family: Arial, sans-serif; }
+#calculator input[type="text"] { width: 60px; padding: 4px; }
+#calculator #result { width: 100px; }
+#calculator button { width: 30px; height: 28px; margin: 0 2px; cursor: pointer; }
